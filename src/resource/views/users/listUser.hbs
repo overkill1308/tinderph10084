@@ -1,0 +1,30 @@
+<body style="background: #654ea3;
+            background: linear-gradient(to right, #e96443, #904e95);
+            min-height: 100vh;">
+<h3 class="text-center" style="color: white;"><a href="/create" class="btn btn-primary">ADD USER</a>  {{viewTitle}}</h3>
+<table class="table table-bordered" style="color: white;">
+    <tr>
+        <th>FULL NAME:</th>
+        <th>DATE:</th>
+        <th>GENDER:</th>
+        <th>HOBBIES:</th>
+        <th>PHONE OR EMAIL:</th>
+        <th>DESCRIPTION:</th>
+        <th>ACTION:</th>
+    </tr>
+    {{#each users}}
+        <tr>
+            <td><a href="/detail/{{this._id}}" style="color: rgb(215, 253, 0); font-size: 17px">{{this.fullname}}</a></td>
+            <td>{{this.date}}</td>
+            <td>{{this.gender}}</td>
+            <td>{{this.hobbies}}</td>
+            <td>{{this.phone}}</td>
+            <td>{{this.description}}</td>
+            <td>
+                <a href="/edit/{{this._id}}" class="btn btn-primary btn-sm">EDIT</a> ||
+                <a href="/delete/{{this._id}}" onclick="return confirm('Are you sure?')" class="btn btn-danger btn-sm">DELETE</a>
+            </td>
+        </tr>
+    {{/each}}
+</table>
+</body>
