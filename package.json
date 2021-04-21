@@ -4,9 +4,14 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "start": "nodemon --watch index.js",
-    "start:dev": "nodemon --watch index.js",
-    "watch": "node-sass src/resource/scss/app.scss src/public/css/app.css"
+    "start": "node src/index.js",
+    "dev": "nodemon index.js",
+    "watch": "node-sass src/resource/scss/app.scss src/public/css/app.css",
+    "env": {
+      "NODE_PATH": "./src/",
+      "NODE_ENV": "development",
+      "PORT": "3000"
+    }
   },
   "repository": {
     "type": "git",
