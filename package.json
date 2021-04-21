@@ -6,12 +6,7 @@
   "scripts": {
     "start": "node src/index.js",
     "dev": "nodemon index.js",
-    "watch": "node-sass src/resource/scss/app.scss src/public/css/app.css",
-    "env": {
-      "NODE_PATH": "./src/",
-      "NODE_ENV": "development",
-      "PORT": "3000"
-    }
+    "watch": "node-sass src/resource/scss/app.scss src/public/css/app.css"
   },
   "repository": {
     "type": "git",
