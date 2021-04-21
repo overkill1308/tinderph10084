@@ -4,12 +4,13 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "node index.js",
+    "start:dev": "nodemon --watch index.js",
     "watch": "node-sass src/resource/scss/app.scss src/public/css/app.css"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/overkill1308/tinder.git"
+    "url": "https://git.heroku.com/tinderph10084.git"
   },
   "keywords": [
     "snake1308",
